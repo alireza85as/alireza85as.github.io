@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alireza Asadiyan - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="banner">
+      <header>
+        <a href="#" class="logo">Alireza<span>.</span></a>
+        <div class="toggle"></div>
+      </header>
+      <img class="bannerImg" src="img.png" alt="img" />
+      <div class="content">
+        <div class="contentBx">
+          <h4>Hello,</h4>
+          <h2>I'm <span>Alireza Asadiyan</span></h2>
+          <h3>Programmer</h3>
+          <p>
+            I am a developer passionate about Artificial Intelligence, software
+            engineering, and product development. I create modern web
+            applications, automation systems, intelligent APIs, and AI-powered
+            solutions that transform ideas into real products. Currently, I
+            focus on building innovative projects that combine technology,
+            design, and user experience to deliver impactful digital solutions.
+          </p>
+          <a href="#">Contact Me</a>
+          <a href="#">Download CV</a>
+        </div>
+      </div>
+      <ul class="sci">
+        <li>
+          <a href="#"><img src="facebook.png" alt="facebook" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="twitter.png" alt="twitter" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="instagram.png" alt="instagram" /></a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+      </ul>
+    </section>
+    <script>
+      let banner = document.querySelector(".banner");
+      let menutoggle = document.querySelector(".toggle");
+      menutoggle.onclick = function () {
+        menutoggle.classList.toggle("active");
+        banner.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
