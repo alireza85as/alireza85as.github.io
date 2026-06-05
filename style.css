@@ -5,6 +5,11 @@
   font-family: "Poppins", sans-serif;
 }
 
+::selection {
+  background: #c00909;
+  color: white;
+}
+
 section {
   position: relative;
   width: 100%;
@@ -35,7 +40,7 @@ section::before {
 }
 
 section.active::before {
-  background: #131821;
+  background: #1a0f0f;
   box-shadow: none;
   transform: translateY(-50%) scale(8);
 }
@@ -110,6 +115,12 @@ header .toggle.active {
     0 0 50px #c00909,
     0 0 150px #c00909;
   animation: glowPulse 3s ease-in-out infinite;
+}
+
+.bannerImg, .img-wrap {
+  user-select: none;
+  -webkit-user-select: none;
+  pointer-events: none;
 }
 
 .content {
